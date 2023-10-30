@@ -199,8 +199,9 @@ class RolePlaying:
         self.user_agent.update_messages(pseudo_msg)
 
         # here we concatenate to store the real message in the log
-        log_and_print_online(self.user_agent.role_name,
-                             "**[Start Chat]**\n\n[" + self.assistant_agent.system_message.content + "]\n\n" + content)
+        # log_and_print_online(self.user_agent.role_name,
+        #                      "**[Start NOWWW]**\n\n[" + self.assistant_agent.system_message.content + "]\n\n" + content)
+        log_and_print_online(self.user_agent.role_name,content)
         return None, user_msg
 
     def process_messages(
